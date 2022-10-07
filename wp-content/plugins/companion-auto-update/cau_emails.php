@@ -240,8 +240,8 @@ function cau_list_plugin_updates() {
 
 			require_once ABSPATH . 'wp-admin/includes/plugin-install.php';
 
-			// Check for required files
-			if ( !function_exists( 'get_plugin_updates' ) ) {
+			// Make sure get_plugin_updates() and get_plugins() are defined
+			if ( !function_exists( 'get_plugin_updates' ) OR !function_exists( 'get_plugins' ) ) {
 				require_once ABSPATH . 'wp-admin/includes/plugin.php';
 				require_once ABSPATH . 'wp-admin/includes/update.php';
 			}

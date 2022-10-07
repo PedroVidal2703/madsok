@@ -5,7 +5,7 @@ Tags: auto, automatic, background, update, updates, updating, automatic updates,
 Requires at least: 3.6.0
 Tested up to: 6.0
 Requires PHP: 5.1
-Stable tag: 3.8.7
+Stable tag: 3.8.7.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -81,6 +81,9 @@ So obviously, some of you wondered what the difference would be between the defa
 4. Keep track of updates with the update log
 
 == Changelog ==
+
+= 3.8.7.1 (September 28, 2022) =
+* Tweak: Extended function_exists check with get_plugins() for the fatal error when trying to send update emails
 
 = 3.8.7 (September 12, 2022) =
 * Fix: Fatal error when trying to send update emails
