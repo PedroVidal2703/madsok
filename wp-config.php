@@ -20,6 +20,8 @@
 
 // ** Configurações do banco de dados - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
+define('WP_CACHE', true);
+define( 'WPCACHEHOME', '/opt/lampp/htdocs/madsok/wp-content/plugins/wp-super-cache/' );
 define( 'DB_NAME', 'madsok' );
 
 /** Usuário do banco de dados MySQL */
@@ -36,6 +38,9 @@ define( 'DB_CHARSET', 'utf8mb4' );
 
 /** O tipo de Collate do banco de dados. Não altere isso se tiver dúvidas. */
 define( 'DB_COLLATE', '' );
+
+/** Max memory usage */
+define('WP_MEMORY_LIMIT', '128M');
 
 /**#@+
  * Chaves únicas de autenticação e salts.
